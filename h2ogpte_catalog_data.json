@@ -1,0 +1,249 @@
+[
+  {
+    "use_case_name": "Regulatory Reporting Assistant",
+    "industry": [
+      "Financial Services",
+      "Insurance",
+      "Government and Regulatory Bodies"
+    ],
+    "persona": [
+      "Risk Analysts",
+      "Regulatory Reporting Analysts",
+      "Chief Risk Officer (CRO) Office Staff"
+    ],
+    "use_case_type": "Text RAG; h2oGPTe",
+    "description": "A Risk Analyst at CBA leverages H2OGPTe's RAG-based solution to query the FY24 Basel III Pillar 3 Disclosure report and answer specific regulatory questions. The RAG system retrieves relevant sections from the disclosure report collection and generates a concise, accurate response. This enables the analyst to efficiently prepare internal capital adequacy summaries for executive leadership and ensures that CBA's reporting remains aligned with APRA\u2019s Basel III compliance standards.",
+    "input_prompt": "You are a risk analyst at CBA, assessing the bank\u2019s capital adequacy and liquidity in compliance with APRA\u2019s Basel III regulations. Based on the latest CBA FY24 Basel III Pillar 3 Disclosure report, answer the following question:\n\nWhat is the total Risk-Weighted Assets (RWA), and what factors contributed to its change over the past year?",
+    "datasets": [
+      "https://drive.google.com/file/d/17TxxRALPZVkSPYH6Ng-FUDvmHNNZ0BxY/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1FuepEGWG-ng-dXw2VJO1Z5fVopZ663kU/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Call Summary and Resolution Detection",
+    "industry": [
+      "Financial Services",
+      "Customer Support Ops",
+      "Contact Center Technology Providers"
+    ],
+    "persona": [
+      "Customer Support Agents",
+      "Quality Assurance (QA) Analysts",
+      "Contact Center Managers"
+    ],
+    "use_case_type": "Audio RAG; h2oGPTe",
+    "description": "A customer support center receives thousands of recorded conversations between agents and customers. To quickly understand the purpose and outcome of each call without manually listening to the entire recording, the system allows users to upload an audio file and ask the following prompt. The system processes the audio, extracts key points, identifies the main topic of discussion, and determines whether the customer's issue was successfully resolved, helping the support team prioritize follow-ups or close cases efficiently.",
+    "input_prompt": "Can you summarise this audio and tell me what is the conversation about? and tell me if this issue was resolved?",
+    "datasets": [
+      "cs_phone.mp3"
+    ],
+    "video": "https://drive.google.com/file/d/1V8ORdYFxzpBqRFeIeVnL5x0P7U9yZ-Dv/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "KYC Document Verification Assistant",
+    "industry": [
+      "Banking",
+      "FinTech",
+      "Insurance"
+    ],
+    "persona": [
+      "KYC Officers at Banks",
+      "Compliance Analysts",
+      "Fraud Prevention Units"
+    ],
+    "use_case_type": "Image RAG; h2oGPT2",
+    "description": "A customer uploads a photo of their Australian Driver’s Licence during a bank onboarding process. The system uses OCR to extract text from the image. RAG retrieves relevant fields like name, DOB, expiry, license number, and address. An LLM checks for missing data, expired documents, or tampered elements (like mismatch between image content and claimed identity). The output is a structured validation result in JSON format, allowing KYC teams to automate verification and flag anomalies.",
+    "input_prompt": "You are a KYC verification assistant. Based on the extracted content from the uploaded Australian driver's licence image, answer the following:\n\n1. What is the full name of the individual?\n2. What is the date of birth and expiry date?\n3. Is the card number and license number present?\n4. Does the address appear complete and formatted correctly?\n5. Are the Licence Class and Conditions fields present and valid?\n6. Is there a visible face photo and signature for identity matching?\n\nReturn your answer as a JSON object with keys: name, dob, expiry, card_number, license_number, address, class, conditions, photo_present, signature_present, and status (Verified/Flagged).",
+    "datasets": [
+      "https://drive.google.com/file/d/1bGvdqTpH0HDPzPEaJwx2QgCG9sPaACAV/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1K-y3OSCZBOu7ghEY1KUOrDUPrbM9JAY8/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Strategic Insight Summarizer (Australia)",
+    "industry": [
+      "Banking and Financial Services",
+      "Investment and Asset Management",
+      "Corporate Strategy & Advisory"
+    ],
+    "persona": [
+      "Strategy Analysts",
+      "Business Analysts",
+      "Executive Leaders (e.g., CFO, CRO, CEO Office)"
+    ],
+    "use_case_type": "Text RAG; h2oGPTe",
+    "description": "A strategy analyst leverages H2OGPTe’s Text RAG-based solution to query the Commonwealth Bank of Australia’s (CBA) 2024 Annual Report. The system is tasked with answering the prompt: \"Summarize Commonwealth Bank’s strategic priorities in 2024 and give 2–3 key achievements under each. Also, suggest 2–3 points on future opportunities.\" H2OGPTe retrieves relevant sections from the Annual Report, synthesizes the information, and generates a structured summary highlighting strategic goals, major accomplishments, and potential future areas of growth. This enables quicker strategic insight generation for analysts, executives, and business teams without manual report reading.",
+    "input_prompt": "Summarize Commonwealth Bank’s strategic priorities in 2024 and give 2–3 key achievements under each. Also, can you generate 2 - 3 points on future opportunity?",
+    "datasets": [
+      "https://drive.google.com/file/d/1BiKV-ogS0sGmbFcoFKnhkMGRQXveJQg5/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1MBfWmBzS2PtvTASaI-i4Uu17ehU56bVK/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Strategic Insight Summarizer (USA)",
+    "industry": [
+      "Banking and Financial Services",
+      "Investment and Asset Management",
+      "Corporate Strategy & Advisory"
+    ],
+    "persona": [
+      "Strategy Analysts",
+      "Business Analysts",
+      "Executive Leaders (e.g., CFO, CRO, CEO Office)"
+    ],
+    "use_case_type": "Text RAG; h2oGPTe",
+    "description": "A strategy analyst uses H2OGPTe’s Text RAG-based solution to analyze U.S. Bancorp’s Q4 2024 Earnings Release and Annual Report. The system is designed to extract and synthesize insights on the bank’s strategic priorities, notable achievements, and future opportunities. By processing dense financial documents, H2OGPTe generates concise, structured summaries that highlight areas such as commercial growth, digital payments innovation, and cost efficiency. This automation dramatically accelerates insight generation for analysts and business leaders—eliminating the need to manually comb through lengthy financial disclosures. It also supports forward-looking planning by identifying whitespace opportunities in emerging areas like embedded finance, small business support, and cross-channel payment solutions.",
+    "input_prompt": "Using U.S. Bancorp’s Q4 2024 earnings release, identify the bank’s core strategic priorities in 2024. For each priority, summarize 2–3 key accomplishments that reflect execution success. Finally, propose 2–3 strategic opportunities for 2025, grounded in trends across digital payments, small business lending, and operational efficiency.",
+    "datasets": [
+      "https://drive.google.com/file/d/1U2R34Ite9SXScXAgv4h2pnm3kQFzE27A/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1dY8VcoPuA779wdXCV1uO5eaamqkPepb1/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Home Loan Credit Risk Assessment Assistant",
+    "industry": [
+      "Banking and Financial Services",
+      "Mortgage and Home Lending",
+      "Credit Risk Management"
+    ],
+    "persona": [
+      "Credit Risk Analysts",
+      "Home Loan Underwriters",
+      "Risk Management Teams"
+    ],
+    "use_case_type": "Agent; h2oGPTe",
+    "description": "A customer has applied for a $600,000 home loan at CBA. Using H2OGPTe, a Credit Risk Analyst evaluates the customer’s financial stability, existing liabilities, credit history, and employment background to determine their credit risk profile. The analyst inputs structured customer details — such as credit score, income, existing debts, debt-to-income ratio, and prior defaults — and asks the system: \"Evaluate the customer's creditworthiness, assign a risk rating (Low, Medium, High), and justify the assessment.\" The RAG-based system retrieves relevant risk evaluation frameworks, analyzes the input parameters, and generates a concise risk assessment with clear reasoning. This enables consistent, explainable, and faster decision-making for loan approvals.",
+    "input_prompt": "You are a credit risk analyst at bank. A customer has applied for a home loan, and you need to assess their risk profile. Given the following customer details, evaluate their creditworthiness and assign a risk rating (Low, Medium, High). Provide reasoning for your assessment.\n\nCredit Score: 720\nAnnual Income: $120,000\nExisting Loans: $30,000\nLoan Amount Requested: $600,000\nEmployment Status: Full-time (5 years)\nDebt-to-Income Ratio: 25%\nPrevious Defaults: No\n\nWhat would be your credit risk assessment, and how would you justify it?",
+    "datasets": null,
+    "video": "https://drive.google.com/file/d/1Cwatp4WLLxI8PGH9TV0nsJ95Vs5iC380/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Video-Based Financial News Analyzer",
+    "industry": [
+      "Banking and Financial Services",
+      "Investment and Asset Management",
+      "Media and Financial Journalism"
+    ],
+    "persona": [
+      "Financial Analysts",
+      "Investor Relations Managers",
+      "Media & Communications Teams"
+    ],
+    "use_case_type": "Video RAG; h2oGPTe",
+    "description": "CBA analysts, economists, or communications teams use H2OGPTe’s Video RAG solution to extract structured insights from financial news video clips. The system analyzes spoken content, on-screen text, and visuals, then presents the extracted insights in clear table formats. This enables quick access to financial trends, performance comparisons, and market sentiment — without manually reviewing the full video content.",
+    "input_prompt": "1. Explain how the Commonwealth Bank's home lending performance and customer use of tax cuts impacted its $2.5 billion Q1 profit. Please present your answer in a table summarizing the key factors and their effects.\n2. Compare the home loan arrears trends between Commonwealth Bank and other major banks like NAB during this period. Provide your response in a table showing the arrears rates and notable differences.\n3. Summarize the expected changes in Australia's quarterly wage growth, and describe how markets like the ASX 200 and Bitcoin are reacting to global events such as Trump's election victory. Please respond in a table format separating economic indicators, expected movements, and observed trends.",
+    "datasets": [
+      "https://drive.google.com/drive/folders/1fNN4mialOjHFwMviZ6IqYxY9I988pz_o?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1vpnQz6renW7y_WzQ9MspSEDsG-PmgjGU/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },
+  {
+    "use_case_name": "Loan Amount Prediction Using H2O's AutoML tool DriverlessAI",
+    "industry": [
+      "Banking and Financial Services",
+      "Consumer Lending",
+      "Credit Risk Management"
+    ],
+    "persona": [
+      "Data Scientists (Credit Risk / Lending Analytics)",
+      "Credit Risk Modelers",
+      "Lending Product Managers"
+    ],
+    "use_case_type": "Agent; h2oGPTe",
+    "description": "A Data Scientist at CBA is tasked with predicting loan amounts using historical loan application data. Using H2O Driverless AI, the goal is to build a regression model that predicts the LoanAmount field, with an emphasis on minimizing RMSE while maintaining high interpretability. The configuration prioritizes interpretability (level 10), moderate accuracy (level 1), and rapid model building (time level 1), ensuring that the model insights are both actionable and understandable for credit officers and business teams. The outputs are used to inform and improve customer loan approval strategies across CBA’s lending portfolio.",
+    "input_prompt": "Create a DAI machine learning model for regression.\n\nData: https://s3.amazonaws.com/data.h2o.ai/DAI-Tutorials/loan_prediction/loan_prediction_train.csv\n\ntarget: \"LoanAmount\"\nscorer: RMSE\naccuracy: 1\ntime: 1\ninterpretability: 10",
+    "datasets": [
+      "https://s3.amazonaws.com/data.h2o.ai/DAI-Tutorials/loan_prediction/loan_prediction_train.csv"
+    ],
+    "video": "https://drive.google.com/file/d/16DXEfyIWxe-K5dxVyovbe03kIMH4QR48/view?usp=drive_link",
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+  },  
+  {
+    "use_case_name": "Website Research Bot",
+    "industry": [
+      "Financial Services",
+      "Risk & Compliance"
+    ],
+    "persona": [
+      "Credit Risk Officers",
+      "Research Analysts",
+      "Compliance Teams"
+    ],
+    "use_case_type": "Agent; h2oGPTe",
+    "description": "The Website Research Bot enables users to extract key insights from external websites such as CreditSource. It helps analysts answer specific questions like how a platform differs from traditional solutions or whether it supports international operations. This streamlines research and due diligence processes by surfacing accurate and contextual information through AI-driven summarization and reasoning.",
+    "input_prompt": "Using live or scraped content from https://creditsource.com.au/, please answer the following questions, citing any numbers found on the site:\n\n1. How does CreditSource’s financial risk assessment approach differ from traditional credit reports?\n2. Does CreditSource provide support or insights for evaluating international suppliers?\n3. What is the claimed turnaround time for a full supplier report?\n4. How many industry sectors does CreditSource cover in its analyses?",
+    "datasets": [
+      "Live or scraped content from https://creditsource.com.au"
+    ],
+    "video": "https://drive.google.com/file/d/1auo3sx8tWv0vVAMDsRGwya-NCPzZJY71/view?usp=drive_link",
+    "slide": null
+  },  
+  {
+    "use_case_name": "AML Risk Investigation",
+    "industry": [
+      "Banking and Financial Services"
+    ],
+    "persona": [
+      "AML Analyst",
+      "Risk Investigator",
+      "Compliance Officer"
+    ],
+    "use_case_type": "Agent; h2oGPTe",
+    "description": "Investigate potentially suspicious financial transactions by analyzing customer behavior patterns, past activity, and compliance rules. The agent chain automates data collection, pattern checks, and risk scoring to assist in decision-making.",
+    "input_prompt": "A CBA customer (ID: 98765) made a $9,900 cash deposit at the Melbourne branch under transaction ID TXN12345. This is the third such deposit in five days. Investigate this transaction for potential structuring or money laundering activity. Refer to AUSTRAC website for regulations and AML policies to determine the risk level and recommended compliance actions.",
+    "datasets": [
+      "https://drive.google.com/drive/folders/1_ykh8AmkdNbSv6E3gfzFhsoTTDQqKqZd?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1bTdlTJVpvc9iLzsSh_3mO9jdpivApOKM/view?usp=drive_link",
+    "slide": null
+  },
+  {
+    "use_case_name": "Image to Excel: Financial Document Parser (V1 - Image to Excel)",
+    "industry": [
+      "Financial Banking",
+      "Accounting",
+      "Insurance"
+    ],
+    "persona": [
+      "Financial Analysts",
+      "Internal/External Auditors",
+      "CFOs & Controllers"
+    ],
+    "use_case_type": "DocAI V2; h2oGPTe; Image",
+    "description": "Users upload images of financial documents (e.g., balance sheets), and a Document AI agent parses them to extract structured data. It then answers complex financial questions (e.g., leverage ratios, impact of treasury stock changes), and presents results in Excel-style tabular format. Useful when no raw Excel or structured data is available.",
+    "input_prompt": "You are a financial analysis assistant. Review the attached image of the balance sheet for Example Corporation dated December 31, 2024. Answer the following questions and present the responses in an Excel-style tabular format, with clear rows and column headers for values, calculations, and insights:\n\nWhat is the net value of Property, Plant & Equipment (after depreciation), and what percentage of total assets does it represent?\n\nCalculate the Total Liabilities-to-Stockholders’ Equity ratio (Leverage Ratio). Present both raw numbers and the percentage value.\n\nIf Treasury Stock were removed (i.e., its value set to zero), how would that affect Total Stockholders' Equity? Show both the current and adjusted equity side-by-side and confirm whether the balance sheet still balances.\n\nFormat your output like this:\n\nMetric        Value (USD)        Calculation Details        Notes\nNet Property, Plant & Equipment        xxx,xxx        Buildings + Equipment + Land - Depreciation        Extracted from balance sheet\n% of Total Assets (PPE)        xx.xx%        (Net PPE / Total Assets) * 100\nTotal Liabilities        xxx,xxx        Sum of Current and Long-term Liabilities\nTotal Stockholders' Equity        xxx,xxx        As stated\nLiabilities to Equity Ratio        x.xx        Total Liabilities / Total Equity        Indicates company leverage\nAdjusted Stockholders' Equity (No TS)        xxx,xxx        Current Equity + Treasury Stock        TS = Treasury Stock\nBalance Sheet Check        Match / Mismatch        Adjusted Assets = Adjusted Liabilities + Equity        Validate balance integrity post-adjustment\n\nOnly provide the table in your output.",
+    "datasets": [
+      "https://drive.google.com/file/d/1qhhqW-OQGPKxgneULDThAaqIXu1It6wa/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/17BxMQ8CyKRftOsotWJp-gQrFocyFB1HB/view?usp=drive_link",
+    "slide": null
+  },
+  {
+    "use_case_name": "Image to Excel: Financial Document Parser (V2 - PDF to Excel)",
+    "industry": [
+      "Finance",
+      "Accounting",
+      "Startups"
+    ],
+    "persona": [
+      "Financial Analysts",
+      "Startup Founders",
+      "CFOs"
+    ],
+    "use_case_type": "DocAI V2; Agents; h2oGPTe; PDF",
+    "description": "Users upload scanned or PDF-based pro forma balance sheets — common in startups and business planning — and the Document AI agent automatically parses the data, extracts year-wise financials (2025–2029), computes key financial ratios, flags anomalies, and delivers all results as a downloadable Excel file with multiple analysis sheets.",
+    "input_prompt": "You are a Document AI agent. Analyze the attached Pro Forma Balance Sheet PDF covering the years 2025 to 2029.\n\nPerform the following:\n\n1. Extract and tabulate:\n   - Total Current Assets, Fixed Assets, Total Assets\n   - Total Current Liabilities, Total Liabilities, Owner’s Equity\n   - Key Ratios: Debt Ratio, Current Ratio, Working Capital, Assets-to-Equity, Debt-to-Equity\n\n2. Highlight anomalies like:\n   - Negative values (e.g., Inventory, Working Capital)\n   - Mismatch in Total Assets vs. Liabilities + Equity\n\n3. Generate a downloadable Excel file (.xlsx) with 3 sheets:\n\n**Sheet 1: Extracted Financials**\n\n| Year | Total Current Assets | Total Fixed Assets | Total Assets | Total Current Liabilities | Total Liabilities | Owner’s Equity |\n\n**Sheet 2: Ratios & Insights**\n\n| Year | Debt Ratio | Current Ratio | Working Capital | Assets-to-Equity Ratio | Debt-to-Equity Ratio | Anomalies/Remarks |\n\n**Sheet 3: Summary**\n\n| Metric                    | Average Value | Notable Trend / Insight |\n|---------------------------|----------------|--------------------------|\n| Avg Debt Ratio            |                |                          |\n| Avg Current Ratio         |                |                          |\n| Avg Assets-to-Equity      |                |                          |\n| Years with Negative WC    |                | (e.g., 2025)             |\n| Balance Sheet Imbalances  |                |                          |\n\nOutput must be a downloadable Excel file.",
+    "datasets": [
+      "https://drive.google.com/file/d/1PwsFqB1UhOldnOpPa_pg-VHZJjiw-9go/view?usp=drive_link"
+    ],
+    "video": "https://drive.google.com/file/d/1U9HEXWuWZgTruC4yQpoU6oKs_Aw12plc/view?usp=drive_link",
+    "slide": null
+  } 
+]
