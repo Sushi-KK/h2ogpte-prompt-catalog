@@ -18,7 +18,7 @@
       "https://drive.google.com/file/d/17TxxRALPZVkSPYH6Ng-FUDvmHNNZ0BxY/view?usp=drive_link"
     ],
     "video": "https://drive.google.com/file/d/1FuepEGWG-ng-dXw2VJO1Z5fVopZ663kU/view?usp=drive_link",
-    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1#slide=id.g34f51f6fd04_0_410"
+    "slide": "https://docs.google.com/presentation/d/1ekhrbzCmFTbrfvwrF92QEhYvFCA_LhUsIJzIKA4-5Uw/edit?pli=1&slide=id.g34f51f6fd04_0_410#slide=id.g34f51f6fd04_0_410"
   },
   {
     "use_case_name": "Call Summary and Resolution Detection",
@@ -244,6 +244,23 @@
       "https://drive.google.com/file/d/1PwsFqB1UhOldnOpPa_pg-VHZJjiw-9go/view?usp=drive_link"
     ],
     "video": "https://drive.google.com/file/d/1U9HEXWuWZgTruC4yQpoU6oKs_Aw12plc/view?usp=drive_link",
+    "slide": null
+  },
+  {
+    "use_case_name": "AI Claims Assistant for Commercial Motor Vehicles (Web search)",
+    "industry": [
+      "Insurance"
+    ],
+    "persona": [
+      "Claims Assessors",
+      "Claims Managers",
+      "Underwriters"
+    ],
+    "use_case_type": "Agents",
+    "description": "A transport operator submits a claim for vehicle damage. The AI agent assists the claims assessor in evaluating the claim by analyzing structured and unstructured data (e.g., incident description, images, policy coverage) to recommend an action (Approve, Request More Info, Decline).",
+    "input_prompt": "You are a claims assessor at NTI Limited(https://www.nti.com.au/). A transport operator has submitted a claim for damage to their heavy vehicle. Review the following details and determine the appropriate action. Provide a justification for your decision.\n\nPolicy Type: Commercial Motor Vehicle\nVehicle Details: 2018 Kenworth T610, 26,000 kg GVM\nIncident Description: Collision with a stationary object while reversing at a loading dock.\nDamage Reported: Rear bumper and tail light assembly.\nDriver Details: Licensed operator with 8 years of experience; no prior incidents.\nSupporting Documents: Photographs of damage, police report, repair estimate.\nPolicy Coverage: Comprehensive, with a $1,000 excess.\n\nWhat is your assessment of the claim, and what action would you recommend? Justify your decision based on the provided information.",
+    "datasets": "https://www.nti.com.au/",
+    "video": "https://drive.google.com/file/d/1CynbS0FMoCWalfN_PBtpUOdNyhzvkGlg/view?usp=drive_link",
     "slide": null
   } 
 ]
